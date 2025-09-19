@@ -1,0 +1,44 @@
+<div class="rs-accordion">
+  <nz-collapse nzAccordion>
+    <nz-collapse-panel
+      *ngFor="let panel of panels"
+      [nzHeader]="headerTpl"
+      [nzActive]="panel.active">
+
+      <!-- Header con icono y título -->
+      <ng-template #headerTpl>
+        <span class="panel-header">
+          <i nz-icon [nzType]="panel.icon"></i>
+          <span class="panel-title">{{ panel.name }}</span>
+        </span>
+      </ng-template>
+
+      <!-- Paneles 1 y 2: lista de textos -->
+      <ng-container *ngIf="panel.items?.length; else techOrEmpty">
+        <ul class="items-list">
+          <li *ngFor="let item of panel.items">{{ item }}</li>
+        </ul>
+      </ng-container>
+
+      <!-- Panel 3: grupos de tecnologías con logos -->
+      <ng-template #techOrEmpty>
+        <div *ngIf="panel.techGroups?.length; else noItems" class="tech-groups">
+          <div class="tech-group" *ngFor="let group of panel.techGroups">
+            <div class="tech-group-title">{{ group.title }}</div>
+            <div class="tech-list">
+              <div class="tech" *ngFor="let t of group.items" [attr.aria-label]="t.name">
+                <img [src]="t.logo" [alt]="t.name" [title]="t.name" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template #noItems>
+        
+      </ng-template>
+      
+    </nz-collapse-panel>
+  </nz-collapse>
+</div>
+

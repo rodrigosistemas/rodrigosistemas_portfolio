@@ -1,0 +1,138 @@
+:root {
+  --maxw: 1280px
+}
+
+.site-footer {
+  width: 100%;
+  background: #0e0b0b;
+  color: #fff;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.footer_container {
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding: 3rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.footer_logo {
+  width: 64px;
+  height: auto;
+  display: block;
+  margin: 0 auto .75rem auto;
+}
+
+.footer_copy,
+.footer_sub {
+  margin: .25rem 0 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.footer_sub {
+  opacity: .9
+}
+
+.footer_socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  justify-content: center;
+}
+
+.footer_social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none
+}
+
+nz-icon,
+.anticon {
+  font-size: 35px;
+  color: #ffffff;
+  line-height: 1
+}
+
+.footer_title {
+  margin: 0 0 1rem 0;
+  font-size: .85rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #d9d9d9;
+}
+
+.footer_list {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+
+.footer_link {
+  display: block;
+  padding: .25rem 0;
+  text-decoration: none;
+  color: #cfcfcf;
+  line-height: 1.6;
+  transition: color .2s ease;
+}
+
+.footer_link:hover,
+.footer__link:focus {
+  color: #ffffff
+}
+
+.footer_blogGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+/* Tablet ≥768px */
+@media (min-width:768px) {
+  .footer_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 2rem;
+  }
+
+  .footer_blog {
+    grid-column: 1 / -1
+  }
+}
+
+/* Desktop ≥1024px */
+@media (min-width:1024px) {
+  .footer_container {
+    grid-template-columns: 1.2fr .8fr 2fr;
+    align-items: start;
+    gap: 3rem;
+    padding: 3rem 3rem;
+  }
+
+  .footer_blog {
+    grid-column: auto
+  }
+
+  .footer_blogGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem
+  }
+
+  .footer_logo {
+    margin: 0 auto 1rem auto
+  }
+
+  .footer_socials {
+    justify-content: center
+  }
+
+  .footer_copy,
+  .footer_sub {
+    text-align: center
+  }
+}

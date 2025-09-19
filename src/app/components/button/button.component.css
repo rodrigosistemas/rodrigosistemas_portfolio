@@ -1,0 +1,16 @@
+[nz-button] {
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+:host ::ng-deep button {
+    background-color: #E43A19;
+    border: none;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+:host ::ng-deep button:hover {
+    background-color: #E43A19;
+    opacity: 1;
+}

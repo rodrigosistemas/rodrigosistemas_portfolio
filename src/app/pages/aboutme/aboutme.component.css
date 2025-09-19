@@ -1,0 +1,207 @@
+.about-me {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "img"
+    "text"
+    "values";
+  gap: 1.25rem;
+}
+
+.about-me>h3 {
+  grid-area: title;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'IBMPlexMono-Regular';
+  letter-spacing: .08em;
+  margin: 3.75rem 0 1rem;
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+}
+
+.aboutme-container {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: justify;
+  margin: 0 .75rem 1.75rem;
+}
+
+.aboutme-container p {
+  color: #eaeaea;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.text-highlighted {
+  color: #5271ff;
+}
+
+#main-rodrigo {
+  grid-area: img;
+  display: block;
+  margin: 0 auto;
+  width: clamp(240px, 36vw, 400px);
+  height: auto;
+}
+
+.personal-values {
+  grid-area: values;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "val-title"
+    "val-list"
+    "val-img";
+  gap: 1rem 1.25rem;
+  margin: .75rem .75rem 0;
+  text-align: justify;
+}
+
+h4 {
+  grid-area: val-title;
+  color: #ffffff;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-family: 'IBMPlexMono-Regular';
+  margin: 1rem 0 .5rem;
+}
+
+.personal-values ul {
+  grid-area: val-list;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.personal-values li {
+  color: #eaeaea;
+  line-height: 1.9;
+  margin: .35rem 0;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.personal-values li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ff5e57;
+}
+
+#second-rodrigo {
+  grid-area: val-img;
+  display: block;
+  margin: .25rem auto 2rem;
+  width: clamp(220px, 28vw, 360px);
+  height: auto;
+}
+
+.skills {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* móvil una columna */
+  gap: 2rem;
+}
+
+.skills>* {
+  min-width: 0;
+}
+
+
+.skills h4 {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'IBMPlexMono-Regular';
+  letter-spacing: .08em;
+  margin: 0 0 1rem;
+}
+
+/* Bloques internos */
+.skills .expertise,
+.skills .additional-education {
+  display: block;
+}
+
+/* Asegura que el collapse/accordion ocupe el ancho sin romper grid */
+.skills .expertise collapse-accordion,
+.skills .expertise nz-collapse,
+.skills .expertise .ant-collapse {
+  display: block;
+  width: 100%;
+}
+
+.carousel-shell {
+  width: 100%;
+  height: clamp(240px, 40vw, 520px);
+  overflow: hidden;
+  border-radius: 10px;
+  background: #0f0f0f;
+}
+
+#second-rodrigo {
+  border-radius: 20%;
+}
+
+/* Display Tablet ≥768px  */
+@media (min-width: 768px) {
+  .about-me {
+    grid-template-columns: 1.1fr .9fr;
+    grid-template-areas:
+      "title  title"
+      "img    text"
+      "values values";
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+    padding: 1.5rem 1.25rem 3rem;
+  }
+
+  .aboutme-container {
+    margin: 0;
+  }
+
+  .personal-values {
+    grid-template-columns: 1.15fr .85fr;
+    grid-template-areas:
+      "val-title val-title"
+      "val-list  val-img";
+    align-items: start;
+    margin: 1.5rem 0 0;
+  }
+
+  #main-rodrigo {
+    width: 250px;
+    height: 400px;
+  }
+
+  .skills {
+    /* 2 columnas: izquierda expertise, derecha certifications */
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+}
+
+/* Display Desktop ≥1024px */
+@media (min-width: 1024px) {
+  .about-me {
+    column-gap: 2.5rem;
+    padding: 1.75rem 1.25rem 3.25rem;
+  }
+
+  .about-me>h3 {
+    font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+    margin-bottom: .75rem;
+  }
+
+  .personal-values {
+    column-gap: 2.25rem;
+  }
+}
