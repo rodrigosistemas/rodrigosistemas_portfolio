@@ -58,7 +58,7 @@
     "val-list"
     "val-img";
   gap: 1rem 1.25rem;
-  margin: .75rem .75rem 0;
+  margin: 2.75rem .75rem 0;
   text-align: justify;
 }
 
@@ -97,7 +97,7 @@ h4 {
   grid-area: val-img;
   display: block;
   margin: .25rem auto 2rem;
-  width: clamp(220px, 28vw, 360px);
+  width: clamp(180px, 28vw, 280px);
   height: auto;
 }
 
@@ -173,7 +173,7 @@ h4 {
       "val-title val-title"
       "val-list  val-img";
     align-items: start;
-    margin: 1.5rem 0 0;
+    margin: 7rem 0 0;
   }
 
   #main-rodrigo {
@@ -197,8 +197,18 @@ h4 {
   }
 
   .about-me>h3 {
-    font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+    font-size: clamp(1.5rem, 1.8vw, 1.5rem);
     margin-bottom: .75rem;
+  }
+
+  .about-me .aboutme-container {
+    font-size: 1rem;
+  }
+
+  .about-me .personal-values {
+    li {
+      font-size: 1rem;
+    } 
   }
 
   .personal-values {

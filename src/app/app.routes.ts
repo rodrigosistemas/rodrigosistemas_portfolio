@@ -9,6 +9,8 @@ export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'portfolio', component: PortfolioComponent },
     { path: 'blog', component: BlogComponent },
-    { path: 'contact', component: ContactComponent }
+    { path: 'blog:post', component: BlogComponent},
+    { path: 'contact', component: ContactComponent },
+    { path: '**', redirectTo: '' }
 
 ];
