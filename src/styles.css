@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: 'WorkSans';
-  src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf');
+    font-family: 'Helvetica Neue';
+    src: url('./assets/fonts/HelveticaNeueLight.otf');
 }
 
 * {
@@ -22,7 +22,7 @@ body {
 }
 
 p {
-    font-family: 'WorkSans';
+    font-family: 'Helvetica Neue';
     color: #ffffff;
 }
 
@@ -30,6 +30,10 @@ ul {
     margin: 0 0 20px 0;
     padding: 0;
     list-style: none;
+}
+
+li {
+    font-family: 'Helvetica Neue';
 }
 
 h3 {

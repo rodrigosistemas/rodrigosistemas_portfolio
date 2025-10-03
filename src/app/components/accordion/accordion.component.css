@@ -75,7 +75,7 @@
 }
 
 .tech-group-title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.95rem;
   margin-bottom: 10px;
   opacity: 0.9;
@@ -103,7 +103,7 @@
   max-width: 36px;
   max-height: 36px;
   display: block;
-  filter: none; /* ajusta si tus SVG son oscuros/claros */
+  filter: none;
 }
 
 
