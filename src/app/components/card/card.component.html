@@ -1,7 +1,7 @@
-<nz-card style="width:300px;" nzTitle="Card title" [nzExtra]="extraTemplate">
-    
-    <img src="" alt="">
-    <p>Card content</p>
+<nz-card *ngFor="let card of cards" [nzTitle]="card.title" [nzExtra]="extraTemplate">
+     
+    <img [ngSrc]="card.image" width="360" height="240" priority  alt="Thumbnail de proyecto">
+    <p>{{card.description}}</p>
     
 </nz-card>
 <ng-template #extraTemplate>

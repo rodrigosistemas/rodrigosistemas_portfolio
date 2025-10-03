@@ -23,15 +23,15 @@ const icons: IconDefinition[] = [SafetyCertificateOutline, BugOutline, CodeOutli
 })
 export class AccordionComponent implements OnInit {
   panel1: string[] = [
-    'Implementación de estándares internacionales de seguridad (NIST, CIS, ISO27001).',
+    'Implementación de estándares internacionales de seguridad de la información (NIST, CIS, ISO27001).',
     'Protección y gestión segura de datos.',
-    'Seguridad de redes y comunicación de datos.',
+    'Seguridad de redes de comunicación.',
     'Detección y prevención de vulnerabilidades en sistemas operativos (principalmente Linux).'
   ];
 
   panel2: string[] = [
     'Identificación de vulnerabilidades en aplicaciones web, sistemas y redes.',
-    'Uso de herramientas avanzadas: Nmap, Metasploit, Burp Suite, Wireshark.',
+    'Uso de herramientas de Red Team: Nmap, Metasploit, Burp Suite, Wireshark.',
     'Técnicas de explotación y mitigación de vulnerabilidades (OWASP Top 10).',
     'Realización de auditorías de seguridad técnica detalladas.'
   ];
@@ -61,7 +61,6 @@ export class AccordionComponent implements OnInit {
             { name: 'HTML5', logo: 'images/tech/html5.png' },
             { name: 'CSS3', logo: 'images/tech/css3.png' },
             { name: 'JavaScript', logo: 'images/tech/javascript.png' },
-            { name: 'React', logo: 'images/tech/react.png' },
             { name: 'Angular', logo: 'images/tech/angular.png' }
           ]
         },
