@@ -9,7 +9,7 @@
 }
 
 :host ::ng-deep .rs-accordion .ant-collapse-item-active > .ant-collapse-header{
-  background: #E43A19;
+  background: #961723;
 }
 
 :host ::ng-deep .rs-accordion .ant-collapse-content{
@@ -67,7 +67,7 @@
 }
 
 .tech-group {
-  background: #222c38;
+  background: #293A5C;
   border-radius: 22px;
   padding: 12px 16px;
   box-shadow: 0 2px 8px rgba(236, 233, 233, 0.76);

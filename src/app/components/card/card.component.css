@@ -1,6 +1,6 @@
 p {
     margin: 0.8rem 0 0;
-    color: #000000;
+    color: #ffffff;
     text-align: justify;
 }
 
@@ -8,11 +8,12 @@ p {
     width: 420px;
     height: 520px;
     margin: 15px;
-    background-color: #5271ff;
+    background-color: #293A5C;
     border: none;
     border-radius: 5%;
 }
 
 :host ::ng-deep nz-card .ant-card-head {
-    background-color: #ffffff;
+    background-color: #293A5C;
+    color: #ffffff;
 }
