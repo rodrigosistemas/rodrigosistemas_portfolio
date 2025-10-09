@@ -6,8 +6,8 @@ import { SharingDataService } from '../../services/sharing-data.service';
 @Component({
   selector: 'nz-buttons-display',
   imports: [NzButtonModule],
-  templateUrl: './button.component.html',
-  styleUrl: './button.component.css'
+  templateUrl: './buttons-display.component.html',
+  styleUrl: './buttons-display.component.css'
 })
 export class ButtonsDisplayComponent {
 

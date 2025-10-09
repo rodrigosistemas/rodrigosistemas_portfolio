@@ -1,5 +1,11 @@
-.portfolio {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 1.25rem 1rem 2.5rem;
+.items-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+
+.items-container p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+

@@ -5,5 +5,10 @@ export interface Card {
     title: string,
     image: string,
     description: string,
-    area: AvailableAreas
+    area: AvailableAreas,
+    complete: boolean,
+    demo?: boolean,
+    github?: boolean,
+    linkdemo?: string,
+    linkgithub?: string
 }

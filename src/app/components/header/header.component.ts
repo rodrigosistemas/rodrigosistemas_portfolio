@@ -12,13 +12,4 @@ import { RouterLink } from '@angular/router';
 })
 export class HeaderComponent {
 
-  visible: boolean = false;
-
-  setVisible() {
-    this.visible = this.visible ? false : true;
-    console.log(this.visible);
-  }
-
-
-
 }

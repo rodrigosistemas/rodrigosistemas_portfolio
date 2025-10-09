@@ -4,16 +4,75 @@ p {
     text-align: justify;
 }
 
+:host {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
 :host ::ng-deep nz-card {
-    width: 420px;
-    height: 520px;
+    width: 300px;
+    height: 500px;
     margin: 15px;
     background-color: #293A5C;
     border: none;
     border-radius: 5%;
+    font-size: 13px;
 }
 
 :host ::ng-deep nz-card .ant-card-head {
     background-color: #293A5C;
     color: #ffffff;
+    font-size: 14px;
 }
+
+.redirections-container {
+    display: flex;
+    justify-content: center;
+}
+
+.redirections-container button {
+    padding: 10px 15px;
+    margin: 10px 10px;
+    border: 0px;
+    border-radius: 5px;
+    color: #0E0B0B;
+}
+
+.redirections-container button:hover {
+    cursor: pointer;
+}
+
+.unique-container {
+    display: flex;
+    justify-content: center;
+}
+
+.unique-container button {
+    padding: 10px 15px;
+    margin: 10px 10px;
+    border: 0px;
+    border-radius: 5px;
+    color: #0E0B0B;
+}
+
+.unique-container button:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    :host {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    :host ::ng-deep nz-card {
+        width: 340px;
+    }
+
+    :host ::ng-deep nz-card img {
+        width: 300px;
+    }
+
+}
+
+/* Display Desktop ≥1024px */

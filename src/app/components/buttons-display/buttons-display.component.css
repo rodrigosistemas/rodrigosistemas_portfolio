@@ -1,6 +1,9 @@
-[nz-button] {
-    margin-right: 8px;
-    margin-bottom: 12px;
+.selectors {
+    display: grid;
+    max-width: 350px;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 0 auto 20px;
 }
 
 :host ::ng-deep button {
@@ -8,6 +11,8 @@
     border: none;
     opacity: 0.9;
     transition: 0.3s;
+    font-size: 12px;
+    margin-top: 10px;
 }
 
 :host ::ng-deep button:hover {
