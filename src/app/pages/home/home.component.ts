@@ -2,10 +2,11 @@ import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/all';
 import { AboutmeComponent } from "../aboutme/aboutme.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [AboutmeComponent],
+  imports: [AboutmeComponent, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
