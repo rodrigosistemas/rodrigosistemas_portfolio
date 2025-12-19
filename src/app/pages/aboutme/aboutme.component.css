@@ -18,8 +18,6 @@
   text-align: center;
   font-family: 'IBMPlexMono-Regular';
   letter-spacing: .08em;
-  margin: 3.75rem 0 1rem;
-  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
 }
 
 .aboutme-container {
@@ -60,14 +58,6 @@
   gap: 1rem 1.25rem;
   margin: 2.75rem .75rem 0;
   text-align: justify;
-}
-
-h4 {
-  grid-area: val-title;
-  color: #ffffff;
-  font-size: clamp(1rem, 1.8vw, 1.25rem);
-  font-family: 'IBMPlexMono-Regular';
-  margin: 1rem 0 .5rem;
 }
 
 .personal-values ul {
@@ -113,15 +103,6 @@ h4 {
 
 .skills>* {
   min-width: 0;
-}
-
-
-.skills h4 {
-  color: #ffffff;
-  text-align: center;
-  font-family: 'IBMPlexMono-Regular';
-  letter-spacing: .08em;
-  margin: 0 0 1rem;
 }
 
 /* Bloques internos */

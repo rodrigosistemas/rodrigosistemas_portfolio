@@ -19,7 +19,7 @@ export class HomeComponent implements AfterViewInit {
 
     const tl = gsap.timeline();
 
-    const words = ["Jr Cibersecurity Engineer", "DevSecOps Specialist"];
+    const words = ["Cloud Security", "DevSecOps"];
 
     words.forEach((word) => {
       tl.to(this.titular.nativeElement, {

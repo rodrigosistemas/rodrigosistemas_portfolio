@@ -23,7 +23,7 @@ const icons: IconDefinition[] = [SafetyCertificateOutline, BugOutline, CodeOutli
 })
 export class AccordionComponent implements OnInit {
   panel1: string[] = [
-    'Implementación de estándares internacionales de seguridad de la información (NIST, CIS, ISO27001).',
+    'Conocimiento de estándares internacionales de seguridad de la información (CIS e ISO27001',
     'Protección y gestión segura de datos.',
     'Seguridad de redes de comunicación.',
     'Detección y prevención de vulnerabilidades en sistemas operativos (principalmente Linux).'

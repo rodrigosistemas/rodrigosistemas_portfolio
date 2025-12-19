@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 import { NzIconModule, NZ_ICONS } from 'ng-zorro-antd/icon';
 import type { IconDefinition } from '@ant-design/icons-angular';
@@ -8,7 +9,7 @@ const icons: IconDefinition[] = [InstagramOutline, GithubOutline, LinkedinOutlin
 
 @Component({
   selector: 'app-footer',
-  imports: [NzIconModule],
+  imports: [NzIconModule, RouterLink],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css',
   providers: [{ provide: NZ_ICONS, useValue: icons }]

@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './cookies.component.html',
   styleUrl: './cookies.component.css'
 })
-export class CookiesComponent {
+export class CookiesPolicyComponent {
 
 }

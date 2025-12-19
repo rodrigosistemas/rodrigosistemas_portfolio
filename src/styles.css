@@ -8,20 +8,12 @@
     src: url('./assets/fonts/HelveticaNeueLight.otf');
 }
 
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 15px;
-}
-
 body {
     margin: 0px;
     background-color: rgb(22, 21, 21);
 }
 
-p {
+p, li {
     font-family: 'Helvetica Neue';
     color: #ffffff;
 }
@@ -32,14 +24,43 @@ ul {
     list-style: none;
 }
 
-li {
-    font-family: 'Helvetica Neue';
+/* Título Principal h3 */
+h3.section-title {
+  font-size: 1.5rem;
+  font-family: 'IBMPlexMono-Regular';
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative; /* Necesario para el ::after */
+  display: inline-block;
+  width: 100%;
+  text-align: center; /* Centrado en Mobile */
+  margin: 3.75rem 0 1rem;
 }
 
-h3 {
-    font-size: 24px;
-    font-family: 'IBMPlexMono-Regular';
-    color: #ffffff;
-    text-align: center;
-    padding-top: 50px;
+/* Subtítulos h4 */
+h4 {
+  font-size: 1.2rem;
+  font-family: 'IBMPlexMono-Regular';
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+h3.section-title::after,
+h4::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #75151E;
+  border-radius: 2px;
+  margin: 10px auto 0;
 }
