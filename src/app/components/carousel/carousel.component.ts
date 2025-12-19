@@ -9,7 +9,10 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
   styleUrl: './carousel.component.css'
 })
 export class NzCarouselAutoplayComponent {
-  arrayOfImgUrls = ['images/badges/CCNAv7IntroductiontoNetworks.jpg', 'images/badges/CCNAFundamentosRedes.jpg', 'images/badges/CiscoEthicalHacker.jpg', 'images/badges/CiscoJuniorCybersecurityAnalyst.jpg'];
+
+  imageRoute: string = 'images/badges/';
+
+  arrayOfImgUrls = [ `${this.imageRoute}CCNAv7IntroductiontoNetworks.jpg`, `${this.imageRoute}CCNAFundamentosRedes.jpg`, `${this.imageRoute}CiscoEthicalHacker.jpg`, `${this.imageRoute}CiscoJuniorCybersecurityAnalyst.jpg`, `${this.imageRoute}JiraGestionProyectos.jpg`, `${this.imageRoute}PentestingWeb.jpg`, `${this.imageRoute}AWSCertifiedDeveloperAssociate.jpg`, `${this.imageRoute}AZ900.jpg`];
 }
 
 
