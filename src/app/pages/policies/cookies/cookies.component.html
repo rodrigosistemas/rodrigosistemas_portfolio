@@ -1,1 +1,44 @@
-<p>cookies works!</p>
+<div class="legal-container">
+  <h1>Política de Cookies</h1>
+  <p class="last-update">Última actualización: Diciembre {{ currentDate | date:'yyyy' }}</p>
+
+  <section>
+    <h2>1. ¿Qué son las cookies?</h2>
+    <p>
+      Las cookies son pequeños archivos de texto que se almacenan en su navegador cuando visita un sitio web. Ayudan a que el sitio funcione correctamente, sea más seguro y nos proporcionan información sobre cómo interactúan los usuarios con el contenido.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Uso de Google Analytics</h2>
+    <p>
+      Este sitio utiliza <strong>Google Analytics</strong>, un servicio de analítica web que me permite entender cómo los visitantes utilizan el portafolio. Esto incluye:
+    </p>
+    <ul>
+      <li><strong>Cookies de rendimiento:</strong> Recopilan información anónima como el número de visitantes, la página de procedencia y las secciones más visitadas.</li>
+      <li><strong>Finalidad:</strong> Optimizar la experiencia del usuario y medir el impacto de mi contenido técnico.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Cookies de terceros</h2>
+    <p>
+      Al interactuar con enlaces de redes sociales (LinkedIn, GitHub, Instagram), esos sitios pueden instalar sus propias cookies. <strong>Rodrigo Sistemas</strong> no tiene control sobre estas cookies externas una vez que usted abandona el dominio.
+    </p>
+  </section>
+
+  <section>
+    <h2>4. Gestión de cookies</h2>
+    <p>
+      Usted puede restringir, bloquear o borrar las cookies de este sitio web utilizando la configuración de su navegador. Tenga en cuenta que deshabilitar ciertas cookies puede afectar la visualización de algunos elementos gráficos del portafolio.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Contacto</h2>
+    <p>
+      Si tiene dudas sobre nuestra política de cookies, puede contactarme en: 
+      <a [href]="'mailto:' + emailContacto">{{ emailContacto }}</a>
+    </p>
+  </section>
+</div>

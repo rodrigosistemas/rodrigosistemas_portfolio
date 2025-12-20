@@ -1,1 +1,49 @@
-<p>privacy works!</p>
+<div class="legal-container">
+  <h1>Política de Privacidad</h1>
+  <p class="last-update">Última actualización: Diciembre {{ currentDate | date:'yyyy' }}</p>
+
+  <section>
+    <h2>1. Introducción</h2>
+    <p>
+      Bienvenido al portafolio de <strong>Rodrigo Sistemas</strong>. Respeto tu privacidad y estoy comprometido a proteger su información personal. 
+      Esta política de privacidad le informará sobre cómo cuido sus datos cuando visita mi sitio web y le informará sobre sus derechos de privacidad.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Información recopilada</h2>
+    <p>
+      Actualmente, este sitio web es principalmente un portafolio informativo. Sin embargo, puede recopilar y procesar los siguientes datos:
+    </p>
+    <ul>
+      <li><strong>Datos de Comunicación:</strong> Si usted se pone en contacto conmigo a través de correo electrónico o LinkedIn, guardaré esa correspondencia.</li>
+      <li><strong>Datos Técnicos:</strong> Dirección IP, tipo de navegador y versión, configuración de zona horaria y ubicación, tipos y versiones de complementos del navegador, sistema operativo y plataforma.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Uso de su información</h2>
+    <p>Solo utilizaré sus datos personales para:</p>
+    <ul>
+      <li>Responder a sus consultas o propuestas laborales.</li>
+      <li>Mejorar mi sitio web y la experiencia del usuario.</li>
+      <li>Garantizar la seguridad del sitio.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Enlaces a terceros</h2>
+    <p>
+      Este sitio web incluye enlaces a sitios web de terceros (como LinkedIn, GitHub). Hacer clic en esos enlaces puede permitir que terceros recopilen o compartan datos sobre usted. 
+      No controlamos estos sitios web de terceros y no somos responsables de sus declaraciones de privacidad.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Contacto</h2>
+    <p>
+      Si tiene alguna pregunta sobre esta política de privacidad, por favor contácteme en: 
+      <a [href]="'mailto:' + emailContacto">{{ emailContacto }}</a>
+    </p>
+  </section>
+</div>
