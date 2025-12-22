@@ -23,17 +23,16 @@ const icons: IconDefinition[] = [SafetyCertificateOutline, BugOutline, CodeOutli
 })
 export class AccordionComponent implements OnInit {
   panel1: string[] = [
-    'Implementación de estándares internacionales de seguridad (NIST, CIS, ISO27001).',
-    'Protección y gestión segura de datos.',
-    'Seguridad de redes y comunicación de datos.',
-    'Detección y prevención de vulnerabilidades en sistemas operativos (principalmente Linux).'
+    'Conocimiento de estándares y marcos de ciberseguridad (ISO/IEC 27001, ISO/IEC 27005 y CIS Controls).',
+    'Fundamentos sólidos de redes (networking): direccionamiento, subredes, switching/routing y troubleshooting básico',
+    'Administración de sistemas Linux.'
   ];
 
   panel2: string[] = [
-    'Identificación de vulnerabilidades en aplicaciones web, sistemas y redes.',
-    'Uso de herramientas avanzadas: Nmap, Metasploit, Burp Suite, Wireshark.',
-    'Técnicas de explotación y mitigación de vulnerabilidades (OWASP Top 10).',
-    'Realización de auditorías de seguridad técnica detalladas.'
+    'Reconocimiento y análisis básico de vulnerabilidades en aplicaciones web, sistemas y redes.',
+    'Uso de herramientas de Red Team: Nmap, Metasploit, Burp Suite, Wireshark.',
+    'Aplicación de buenas prácticas de seguridad basadas en OWASP Top 10.',
+    'Apoyo en revisiones técnicas, documentación de hallazgos y recomendaciones de mitigación.'
   ];
 
   panels: Panel[] = [
@@ -61,8 +60,8 @@ export class AccordionComponent implements OnInit {
             { name: 'HTML5', logo: 'images/tech/html5.png' },
             { name: 'CSS3', logo: 'images/tech/css3.png' },
             { name: 'JavaScript', logo: 'images/tech/javascript.png' },
-            { name: 'React', logo: 'images/tech/react.png' },
-            { name: 'Angular', logo: 'images/tech/angular.png' }
+            { name: 'Angular', logo: 'images/tech/angular.png' },
+            { name: 'React', logo: 'images/tech/react.png' }
           ]
         },
         {
@@ -71,7 +70,6 @@ export class AccordionComponent implements OnInit {
             { name: 'Java', logo: 'images/tech/java.png' },
             { name: 'Spring Boot', logo: 'images/tech/spring-boot.png' },
             { name: 'Node.js', logo: 'images/tech/nodejs.png' },
-            { name: 'Python', logo: 'images/tech/python.png' }
           ]
         },
         {
@@ -79,9 +77,7 @@ export class AccordionComponent implements OnInit {
           items: [
             { name: 'MySQL', logo: 'images/tech/mysql.png' },
             { name: 'PostgreSQL', logo: 'images/tech/postgresql.png' },
-            { name: 'SQL Server', logo: 'images/tech/sqlserver.png' },
-            { name: 'MongoDB', logo: 'images/tech/mongo.png' }
-          ]
+            { name: 'SQL Server', logo: 'images/tech/sqlserver.png' }          ]
         },
         {
           title: 'Herramientas DevOps',
@@ -89,9 +85,7 @@ export class AccordionComponent implements OnInit {
             { name: 'AWS', logo: 'images/tech/aws.png' },
             { name: 'Azure', logo: 'images/tech/azure.png' },
             { name: 'Docker', logo: 'images/tech/docker.png' },
-            { name: 'Git', logo: 'images/tech/git.png' },
-            { name: 'Jenkins', logo: 'images/tech/jenkins.png' },
-            { name: 'Terraform', logo: 'images/tech/terraform.png' } 
+            { name: 'Git', logo: 'images/tech/git.png' }
           ]
         }
       ]

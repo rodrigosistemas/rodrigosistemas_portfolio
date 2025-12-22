@@ -1,7 +1,14 @@
-type AreasDisponibles = "Desarrollo Web" | "Ciberseguridad" | "Data";
+type AvailableAreas = 'Programación Web' | 'Ciberseguridad' | 'Desarrollo de Software & Datos';
 
-interface Card {
-    name: string,
+export interface Card {
+    id: number,
+    title: string,
+    image: string,
     description: string,
-    area: AreasDisponibles
+    area: AvailableAreas,
+    complete: boolean,
+    demo?: boolean,
+    github?: boolean,
+    linkdemo?: string,
+    linkgithub?: string
 }

@@ -56,8 +56,9 @@ header nav a {
 
 header nav a:hover {
   text-decoration: underline 2px;
+  text-decoration-color: #ffffff;
   text-underline-offset: 4px;
-  opacity: 1;
+
 }
 
 #dropdown-language {

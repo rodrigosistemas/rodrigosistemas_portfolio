@@ -9,7 +9,10 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
   styleUrl: './carousel.component.css'
 })
 export class NzCarouselAutoplayComponent {
-  arrayOfImgUrls = ['https://certifications-rodrigosistemas.s3.us-east-2.amazonaws.com/CCNAv7+Introduction+to+Networks.jpg', 'https://certifications-rodrigosistemas.s3.us-east-2.amazonaws.com/CCNA+Fundamentos+de+Conmutaci%C3%B3n+y+Enrutamiento+y+Redes+Inal%C3%A1mbricas.jpg', 'https://certifications-rodrigosistemas.s3.us-east-2.amazonaws.com/Cisco+Junior+Cybersecurity+Analyst.jpg', 'https://certifications-rodrigosistemas.s3.us-east-2.amazonaws.com/Cisco+Ethical+Hacker.jpg' ];
+
+  imageRoute: string = 'images/badges/';
+
+  arrayOfImgUrls = [ `${this.imageRoute}CCNAv7IntroductiontoNetworks.jpg`, `${this.imageRoute}CCNAFundamentosRedes.jpg`, `${this.imageRoute}CiscoEthicalHacker.jpg`, `${this.imageRoute}CiscoJuniorCybersecurityAnalyst.jpg`, `${this.imageRoute}JiraGestionProyectos.jpg`, `${this.imageRoute}PentestingWeb.jpg`, `${this.imageRoute}AWSCertifiedDeveloperAssociate.jpg`, `${this.imageRoute}AZ900.jpg`];
 }
 
 

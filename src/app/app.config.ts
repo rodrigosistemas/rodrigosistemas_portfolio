@@ -7,7 +7,7 @@ import { registerLocaleData } from '@angular/common';
 import es from '@angular/common/locales/es';
 import { es_ES, provideNzI18n } from 'ng-zorro-antd/i18n';
 
-import { provideRouter } from '@angular/router';
+import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { routes } from './app.routes';
 
 import { provideHttpClient } from '@angular/common/http';
@@ -19,7 +19,9 @@ export const appConfig: ApplicationConfig = {
 
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes),
+    provideRouter(routes, withInMemoryScrolling({
+      scrollPositionRestoration: 'top'
+    })),
     provideAnimationsAsync(), provideNzI18n(es_ES), importProvidersFrom(FormsModule), provideHttpClient()
 
   ]

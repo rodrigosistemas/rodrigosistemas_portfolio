@@ -1,35 +1,34 @@
-import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChild, OnDestroy } from '@angular/core';
 import { gsap } from 'gsap';
-import { TextPlugin } from 'gsap/all';
 import { AboutmeComponent } from "../aboutme/aboutme.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [AboutmeComponent],
+  imports: [AboutmeComponent, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements AfterViewInit, OnDestroy {
+  @ViewChild('titular', { static: true }) titular!: ElementRef<HTMLElement>;
 
-  @ViewChild('titular') titular!: ElementRef;
+  private tl?: gsap.core.Timeline;
 
   ngAfterViewInit(): void {
-    gsap.registerPlugin(TextPlugin);
+    const words = ['Cloud Security', 'DevSecOps'];
 
-    const tl = gsap.timeline();
-
-    const words = ["Ingeniería de Ciberseguridad", "Especialista DevSecOps"];
+    this.tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
 
     words.forEach((word) => {
-      tl.to(this.titular.nativeElement, {
+      this.tl!.to(this.titular.nativeElement, {
         text: word,
-        duration: 5,
-        delay: 1
-      })
+        duration: 2,
+        delay: 0.6
+      });
     });
-
-    tl.repeat(-1).repeatDelay(1);
-
   }
 
+  ngOnDestroy(): void {
+    this.tl?.kill();
+  }
 }

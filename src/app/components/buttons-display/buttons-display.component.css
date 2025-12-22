@@ -1,0 +1,25 @@
+.selectors {
+    display: grid;
+    max-width: 360px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto 20px;
+}
+
+:host ::ng-deep button {
+    background-color:#961723;
+    border: none;
+    opacity: 0.9;
+    transition: 0.3s;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+:host ::ng-deep button:hover {
+    background-color: #961723;
+    opacity: 1.1;
+}
+
+:host ::ng-deep button:focus {
+    background-color: #961723;
+}

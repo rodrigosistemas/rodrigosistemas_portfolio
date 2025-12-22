@@ -1,9 +1,38 @@
-<nz-card style="width:300px;" nzTitle="Card title" [nzExtra]="extraTemplate">
-    
-    <img src="" alt="">
-    <p>Card content</p>
-    
+<nz-card *ngFor="let card of cards" [nzTitle]="card.title">
+
+    <img [ngSrc]="card.image" width="250" height="200" priority alt="Thumbnail de proyecto">
+    <p>{{card.description}}</p>
+
+    <div class="splitter" *ngIf="card.complete; else render">
+        <div class="redirections-container">
+            <a [href]="card.linkdemo" target="_blank">
+                <button>Ver demo <span nz-icon nzType="export" nzTheme="outline"></span> </button>
+            </a>
+            <a [href]="card.linkgithub" target="_blank">
+                <button>Github <span nz-icon nzType="github" nzTheme="outline"></span> </button>
+            </a>
+        </div>
+    </div>
+
+    <ng-template #render>
+        <ng-container *ngIf="card.demo">
+            <div class="unique-container">
+                <a [href]="card.linkdemo" target="_blank">
+                    <button>Ver demo <span nz-icon nzType="export" nzTheme="outline"></span> </button>
+                </a>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="card.github">
+            <div class="unique-container">
+                <a [href]="card.linkgithub" target="_blank">
+                    <button>Github <span nz-icon nzType="github" nzTheme="outline"></span> </button>
+                </a>
+            </div>
+        </ng-container>
+    </ng-template>
+
 </nz-card>
 <ng-template #extraTemplate>
-    <a>More</a>
+
 </ng-template>

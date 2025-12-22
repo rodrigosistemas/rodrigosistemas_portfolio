@@ -1,0 +1,16 @@
+.items-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.items-container p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.projects {
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}

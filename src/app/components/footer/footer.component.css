@@ -47,14 +47,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none
+  text-decoration: none;
 }
 
-nz-icon,
-.anticon {
+nz-icon {
   font-size: 35px;
   color: #ffffff;
-  line-height: 1
+  line-height: 1;
+}
+
+nz-icon:hover {
+  color: #961723;
+  transition: 0.5s;
 }
 
 .footer_title {
